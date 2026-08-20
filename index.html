@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Strength & Fitness | Premium Personal Training & Group Workouts</title>
+    <meta name="description" content="Transform your body and life with premium online group fitness training and custom 12-week transformation programs designed around your goals.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="main-header" id="header">
+        <div class="header-container">
+            <a href="#home" class="logo">
+                APEX<span class="red-text">STRENGTH</span>
+            </a>
+            
+            <!-- Mobile Toggle -->
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="main-nav" id="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#why-choose-us" class="nav-link">Why Choose Us</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#contact" class="nav-link">Contact Us</a></li>
+                    <!-- Auth States -->
+                    <li class="auth-guest"><button class="btn btn-outline" id="nav-signin-btn">Sign In</button></li>
+                    <li class="auth-guest"><button class="btn btn-red" id="nav-register-btn">Register</button></li>
+                    <!-- User Dropdown (Hidden by default) -->
+                    <li class="auth-user hidden">
+                        <div class="user-dropdown">
+                            <button class="user-dropdown-btn" id="user-menu-btn" aria-haspopup="true" aria-expanded="false">
+                                <span class="user-icon-avatar">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                                </span>
+                                <span id="username-display">User</span>
+                                <svg class="dropdown-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+                            </button>
+                            <div class="dropdown-menu" id="dropdown-menu" aria-label="User menu">
+                                <button class="dropdown-item" id="logout-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17 7l-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.58L17 17l5-5zM4 5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8v-2H4V5z"/></svg>
+                                    Logout
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero-section scroll-reveal" style="background-image: linear-gradient(rgba(10, 10, 10, 0.75), rgba(10, 10, 10, 0.9)), url('images/hero_bg.jpg');">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-tagline">UNLEASH YOUR POTENTIAL</span>
+                    <h1 class="hero-title">Transform Your Body.<br><span class="red-text">Transform Your Life.</span></h1>
+                    <p class="hero-desc">
+                        Achieve your ultimate fitness goals under the expert guidance of professional trainers. 
+                        Whether you are training from home, joining live interactive group workouts, or seeking a 
+                        highly tailored 12-week transformation plan, your breakthrough starts today.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="btn btn-red btn-large" id="hero-demo-btn">Start Your Free 1-Week Demo</button>
+                        <a href="#services" class="btn btn-outline btn-large">View Training Plans</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-tag">WHAT WE OFFER</span>
+                    <h2 class="section-title">Our Fitness Services</h2>
+                    <p class="section-subtitle">
+                        Join our dynamic group workouts live online three times per week. Led by professional trainers, 
+                        these classes are designed to push boundaries and build consistency.
+                    </p>
+                </div>
+
+                <div class="services-grid scroll-reveal">
+                    <!-- Service 1: Monday -->
+                    <div class="service-card" data-day="Monday" data-session="Full Body Workout" data-time="6:00 PM - 7:00 PM">
+                        <div class="card-badge">MON</div>
+                        <div class="service-icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="service-day-title">Monday – Full Body Workout</h3>
+                        <p class="service-time">6:00 PM – 7:00 PM</p>
+                        <ul class="service-features">
+                            <li><strong class="white-text">Session Type:</strong> High-Intensity Intervals & Strength</li>
+                            <li><strong class="white-text">Instructor:</strong> Coach Alex Carter</li>
+                            <li><strong class="white-text">Intensity Level:</strong> Moderate to High</li>
+                        </ul>
+                        <div class="space-indicator">
+                            <span class="pulse-indicator"></span>
+                            <span class="spaces-left-txt">Only <span class="spaces-count" id="spaces-mon">5</span> spaces left</span>
+                        </div>
+                        <button class="btn btn-red btn-full book-service-btn">Book Now</button>
+                    </div>
+
+                    <!-- Service 2: Wednesday -->
+                    <div class="service-card featured" data-day="Wednesday" data-session="Strength & Conditioning" data-time="6:00 PM - 7:00 PM">
+                        <div class="card-badge">WED</div>
+                        <div class="service-icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                            </svg>
+                        </div>
+                        <h3 class="service-day-title">Wednesday – Strength & Conditioning</h3>
+                        <p class="service-time">6:00 PM – 7:00 PM</p>
+                        <ul class="service-features">
+                            <li><strong class="white-text">Session Type:</strong> Resistance & Hypertrophy</li>
+                            <li><strong class="white-text">Instructor:</strong> Coach Alex Carter</li>
+                            <li><strong class="white-text">Intensity Level:</strong> High Focus & Form</li>
+                        </ul>
+                        <div class="space-indicator">
+                            <span class="pulse-indicator"></span>
+                            <span class="spaces-left-txt">Only <span class="spaces-count" id="spaces-wed">3</span> spaces left</span>
+                        </div>
+                        <button class="btn btn-red btn-full book-service-btn">Book Now</button>
+                    </div>
+
+                    <!-- Service 3: Saturday -->
+                    <div class="service-card" data-day="Saturday" data-session="Cardio & Core" data-time="9:00 AM - 10:00 AM">
+                        <div class="card-badge">SAT</div>
+                        <div class="service-icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="service-day-title">Saturday – Cardio & Core</h3>
+                        <p class="service-time">9:00 AM – 10:00 AM</p>
+                        <ul class="service-features">
+                            <li><strong class="white-text">Session Type:</strong> Metabolic Conditioning & Abs</li>
+                            <li><strong class="white-text">Instructor:</strong> Coach Alex Carter</li>
+                            <li><strong class="white-text">Intensity Level:</strong> Fast-Paced</li>
+                        </ul>
+                        <div class="space-indicator">
+                            <span class="pulse-indicator text-yellow"></span>
+                            <span class="spaces-left-txt">Only <span class="spaces-count" id="spaces-sat">8</span> spaces left</span>
+                        </div>
+                        <button class="btn btn-red btn-full book-service-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Personal Training Highlight Section -->
+        <section id="personal-training" class="pt-section">
+            <div class="container pt-container scroll-reveal">
+                <div class="pt-grid">
+                    <div class="pt-content">
+                        <span class="section-tag tag-red">ULTIMATE COACHING</span>
+                        <h2 class="pt-title">Your Personal 12-Week Transformation</h2>
+                        <p class="pt-subtitle">
+                            Ready to take it to the next level? Our premium 12-week program is a client-centred, 
+                            fully personalized personal training experience designed from the ground up to match your biology and lifestyle.
+                        </p>
+                        <p class="pt-desc">
+                            We don't believe in generic templates. Our coach works with you individually to understand 
+                            your fitness goals, current level, weight management target, strength metrics, muscle building milestones, 
+                            daily schedule, food preferences, and availability.
+                        </p>
+                        
+                        <div class="pt-perks-grid">
+                            <div class="perk-item">
+                                <svg class="perk-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span>Personal Fitness Assessment</span>
+                            </div>
+                            <div class="perk-item">
+                                <svg class="perk-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span>Customised Workout Plan</span>
+                            </div>
+                            <div class="perk-item">
+                                <svg class="perk-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span>12-Week Structured Training</span>
+                            </div>
+                            <div class="perk-item">
+                                <svg class="perk-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span>Personal Coaching & Form Review</span>
+                            </div>
+                            <div class="perk-item">
+                                <svg class="perk-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span>Progress Tracking & Metric Charts</span>
+                            </div>
+                            <div class="perk-item">
+                                <svg class="perk-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span>Nutrition & Lifestyle Guidance</span>
+                            </div>
+                            <div class="perk-item">
+                                <svg class="perk-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span>Weekly 1-on-1 Check-ins</span>
+                            </div>
+                            <div class="perk-item">
+                                <svg class="perk-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span>Flexible Training Schedule</span>
+                            </div>
+                            <div class="perk-item">
+                                <svg class="perk-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span>Personal Goal Review sessions</span>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-red btn-large" id="pt-journey-btn">Start Your 12-Week Journey</button>
+                    </div>
+                    
+                    <div class="pt-visual">
+                        <div class="pt-visual-box">
+                            <div class="stat-bubble bubble-top animate-float">
+                                <span class="bubble-num">100%</span>
+                                <span class="bubble-lbl">Tailored to You</span>
+                            </div>
+                            <div class="stat-bubble bubble-bottom animate-float-delayed">
+                                <span class="bubble-num">12</span>
+                                <span class="bubble-lbl">Weeks Focus</span>
+                            </div>
+                            <div class="pt-visual-glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Try Us Free Demo Section -->
+        <section class="demo-section">
+            <div class="container scroll-reveal">
+                <div class="demo-card">
+                    <div class="demo-content">
+                        <h2 class="demo-title">Try Us Free for 7 Days</h2>
+                        <p class="demo-text">
+                            Experience our interactive online live fitness sessions for one full week before choosing a subscription package. 
+                            There is absolutely no obligation or credit card required.
+                        </p>
+                        <div class="demo-benefits">
+                            <div class="demo-benefit-col">
+                                <h3>Experience Live Sessions</h3>
+                                <p>Feel the high energy of live group workouts led by Coach Alex.</p>
+                            </div>
+                            <div class="demo-benefit-col">
+                                <h3>Meet the Trainer</h3>
+                                <p>Get live feedback on your form and immediate answers to your fitness questions.</p>
+                            </div>
+                            <div class="demo-benefit-col">
+                                <h3>Understand the Style</h3>
+                                <p>Find out how the structured workouts fit into your daily life.</p>
+                            </div>
+                            <div class="demo-benefit-col">
+                                <h3>Decide with Confidence</h3>
+                                <p>Discover which program aligns perfectly with your goals.</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-red btn-large btn-center" id="demo-claim-btn">Claim Your Free 1-Week Demo</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="why-choose-us" class="why-section">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-tag">APEX ADVANTAGE</span>
+                    <h2 class="section-title">Why Choose Us</h2>
+                    <p class="section-subtitle">
+                        We deliver a results-driven training model that places your schedule, health metrics, and long-term habits at the center.
+                    </p>
+                </div>
+
+                <div class="why-grid scroll-reveal">
+                    <!-- Reason 1 -->
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                            </svg>
+                        </div>
+                        <h3>Personalised Training</h3>
+                        <p>Every fitness journey is unique. We adapt every movement to your current biological starting point and destination goals.</p>
+                    </div>
+
+                    <!-- Reason 2 -->
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3>Flexible Online Training</h3>
+                        <p>Join high-definition live interactive sessions from the comfort of your home, local park, or workspace.</p>
+                    </div>
+
+                    <!-- Reason 3 -->
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138z" />
+                            </svg>
+                        </div>
+                        <h3>Professional Guidance</h3>
+                        <p>Obtain expert nutritional blueprints and detailed movement form cues to avoid injury and accelerate progress.</p>
+                    </div>
+
+                    <!-- Reason 4 -->
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3>Client-Centred Approach</h3>
+                        <p>Your fitness targets, daily physical capability, lifestyle stresses, and sleep levels dictate the speed and style of workouts.</p>
+                    </div>
+
+                    <!-- Reason 5 -->
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10a2 2 0 01-2 2h-2a2 2 0 01-2-2zm9-4h2a2 2 0 002-2V9a2 2 0 00-2-2h-2a2 2 0 00-2 2v6a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3>Progress Tracking</h3>
+                        <p>Track body measurements, workout performance, strength multipliers, and cardiovascular metrics via structured reviews.</p>
+                    </div>
+
+                    <!-- Reason 6 -->
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                        <h3>Supportive Community</h3>
+                        <p>Join a group of goal-oriented, positive, and motivating peers who celebrate every milestone you achieve.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works-section">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-tag">YOUR PATH</span>
+                    <h2 class="section-title">How It Works</h2>
+                    <p class="section-subtitle">
+                        Starting your fitness journey is simple. Follow these four basic steps to kickstart your transformation.
+                    </p>
+                </div>
+
+                <div class="steps-grid scroll-reveal">
+                    <!-- Step 1 -->
+                    <div class="step-card">
+                        <div class="step-number-box">
+                            <span class="step-number">01</span>
+                        </div>
+                        <h3>Choose Your Plan</h3>
+                        <p>Select either a 7-day free trial demo, online group training sessions, or a premium 1-on-1 personal coaching plan.</p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="step-card">
+                        <div class="step-number-box">
+                            <span class="step-number">02</span>
+                        </div>
+                        <h3>Register Account</h3>
+                        <p>Fill out your fitness goals, setup a password, and register your profile. Your workout dashboard is active instantly.</p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="step-card">
+                        <div class="step-number-box">
+                            <span class="step-number">03</span>
+                        </div>
+                        <h3>Book Your Sessions</h3>
+                        <p>Browse the live interactive workout times and reserve slots on your schedule with a single click.</p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="step-card">
+                        <div class="step-number-box">
+                            <span class="step-number">04</span>
+                        </div>
+                        <h3>Start Training</h3>
+                        <p>Log in, join the video classroom at session time, check your form with the coach, and start transforming.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-visual scroll-reveal">
+                        <div class="trainer-img-wrapper">
+                            <img src="images/trainer.jpg" alt="Coach Alex Carter in a premium training environment" class="trainer-img" loading="lazy">
+                            <div class="trainer-tag">
+                                <h3>Alex Carter</h3>
+                                <p>Head Strength Coach & founder</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-content scroll-reveal">
+                        <span class="section-tag">BEHIND APEX</span>
+                        <h2 class="section-title">Fitness Designed Around You</h2>
+                        <p class="about-text">
+                            At APEX STRENGTH, we believe that real, lasting fitness cannot follow a one-size-fits-all approach. 
+                            Your work, stress levels, training experience, and joint structures dictate how you should build strength.
+                        </p>
+                        <p class="about-text">
+                            We focus on sustainable results, client-focused coaching, and building incremental, healthy habits. 
+                            Our goal is to give you professional, structural support that results in long-term life transformation.
+                        </p>
+
+                        <!-- Stats Section -->
+                        <div class="stats-grid" id="stats-section">
+                            <div class="stat-card">
+                                <div class="stat-number" data-target="500">0</div>
+                                <div class="stat-label">Happy Clients</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number" data-target="1000">0</div>
+                                <div class="stat-label">Training Sessions</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number" data-target="12">0</div>
+                                <div class="stat-label">Transformation Weeks</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number" data-target="3">0</div>
+                                <div class="stat-label">Live Weekly Sessions</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-tag">TESTIMONIALS</span>
+                    <h2 class="section-title">Real Success Stories</h2>
+                    <p class="section-subtitle">
+                        See how our clients transformed their strength, health, and confidence with our structured programs.
+                    </p>
+                </div>
+
+                <!-- Testimonials Slider Wrapper -->
+                <div class="slider-outer scroll-reveal">
+                    <div class="testimonials-slider" id="testimonial-slider" aria-roledescription="carousel" aria-label="Client testimonials">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-slide active" role="group" aria-roledescription="slide" aria-label="1 of 3">
+                            <div class="testimonial-card-ui">
+                                <div class="client-info">
+                                    <img src="images/client1.jpg" alt="Client Sarah Jenkins" class="client-avatar" loading="lazy">
+                                    <div>
+                                        <h3 class="client-name">Sarah Jenkins</h3>
+                                        <p class="client-meta">Lost 12kg & Built Lean Core</p>
+                                    </div>
+                                </div>
+                                <div class="client-stars">
+                                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                                </div>
+                                <blockquote class="client-quote">
+                                    "The 12-week program completely changed the way I approach fitness. The personalized support 
+                                    kept me motivated and accountable. I've never felt stronger or more confident in my body."
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-slide" role="group" aria-roledescription="slide" aria-label="2 of 3">
+                            <div class="testimonial-card-ui">
+                                <div class="client-info">
+                                    <img src="images/client2.jpg" alt="Client David Vance" class="client-avatar" loading="lazy">
+                                    <div>
+                                        <h3 class="client-name">David Vance</h3>
+                                        <p class="client-meta">Increased Strength & Mobility</p>
+                                    </div>
+                                </div>
+                                <div class="client-stars">
+                                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                                </div>
+                                <blockquote class="client-quote">
+                                    "Training live online three times per week fits perfectly into my hectic work schedule. 
+                                    Coach Alex watches my form closely through the webcam, providing instant adjustments. My back pain is gone!"
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial-slide" role="group" aria-roledescription="slide" aria-label="3 of 3">
+                            <div class="testimonial-card-ui">
+                                <div class="client-info">
+                                    <img src="images/client3.jpg" alt="Client Emma Watson" class="client-avatar" loading="lazy">
+                                    <div>
+                                        <h3 class="client-name">Emma Watson</h3>
+                                        <p class="client-meta">Cardio Endurance & Muscle Gain</p>
+                                    </div>
+                                </div>
+                                <div class="client-stars">
+                                    &#9733;&#9733;&#9733;&#9733;&#9734;
+                                </div>
+                                <blockquote class="client-quote">
+                                    "APEX Strength provided a realistic training schedule that I could actually stick to. 
+                                    The weekly check-ins and custom nutrition guides kept me on track even during holidays. Highly recommend!"
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide Controls -->
+                    <div class="slider-controls">
+                        <button class="slider-arrow arrow-left" id="slide-prev" aria-label="Previous Slide">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/></svg>
+                        </button>
+                        
+                        <!-- Slider Dots -->
+                        <div class="slider-dots" id="slider-dots">
+                            <button class="slider-dot active" data-slide="0" aria-label="Go to slide 1"></button>
+                            <button class="slider-dot" data-slide="1" aria-label="Go to slide 2"></button>
+                            <button class="slider-dot" data-slide="2" aria-label="Go to slide 3"></button>
+                        </div>
+
+                        <button class="slider-arrow arrow-right" id="slide-next" aria-label="Next Slide">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-tag">FAQ</span>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">
+                        Find answers to common questions about our live workouts, equipment requirements, and personal training options.
+                    </p>
+                </div>
+
+                <div class="faq-accordion-box scroll-reveal">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false" aria-controls="faq-content-1">
+                            <span class="faq-question">How do I join the live training sessions?</span>
+                            <span class="faq-icon-toggle"></span>
+                        </button>
+                        <div class="faq-content" id="faq-content-1" role="region">
+                            <div class="faq-answer-inner">
+                                Once you register and book a session, you will receive a secure video classroom link via email. 
+                                Simply log in, click the link 5 minutes before the training begins, and Coach Alex will welcome you to the virtual studio.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false" aria-controls="faq-content-2">
+                            <span class="faq-question">Can I try the programme before paying?</span>
+                            <span class="faq-icon-toggle"></span>
+                        </button>
+                        <div class="faq-content" id="faq-content-2" role="region">
+                            <div class="faq-answer-inner">
+                                Yes, absolutely! We offer a full 1-week free trial with no credit card required. This allows you 
+                                to participate in our group workouts and experience the coaching quality firsthand.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false" aria-controls="faq-content-3">
+                            <span class="faq-question">What happens during the 1-week free demo?</span>
+                            <span class="faq-icon-toggle"></span>
+                        </button>
+                        <div class="faq-content" id="faq-content-3" role="region">
+                            <div class="faq-answer-inner">
+                                During the free demo week, you get access to all 3 live training sessions (Monday, Wednesday, Saturday). 
+                                You can join the classes, chat with Coach Alex, and see if our coaching methodology aligns with your goals.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false" aria-controls="faq-content-4">
+                            <span class="faq-question">Is the 12-week programme personalised?</span>
+                            <span class="faq-icon-toggle"></span>
+                        </button>
+                        <div class="faq-content" id="faq-content-4" role="region">
+                            <div class="faq-answer-inner">
+                                Yes, 100%. The 12-week transformation plan starts with a private assessment video call where we cover 
+                                your training limits, past injuries, targets, nutrition, and schedule. We then build custom routines tailored specifically to you.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false" aria-controls="faq-content-5">
+                            <span class="faq-question">Do I need gym equipment?</span>
+                            <span class="faq-icon-toggle"></span>
+                        </button>
+                        <div class="faq-content" id="faq-content-5" role="region">
+                            <div class="faq-answer-inner">
+                                For the live group training, minimal equipment like resistance bands or light dumbbells is helpful but not mandatory. 
+                                We offer bodyweight progressions for every single exercise. For 1-on-1 personal training, we build plans based on whatever equipment you have available.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 6 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false" aria-controls="faq-content-6">
+                            <span class="faq-question">Can beginners join the programme?</span>
+                            <span class="faq-icon-toggle"></span>
+                        </button>
+                        <div class="faq-content" id="faq-content-6" role="region">
+                            <div class="faq-answer-inner">
+                                Yes! Our workouts are designed using scalable movements. Whether you are performing your very first squat 
+                                or you are an experienced lifter, our coach provides scale-down and scale-up variations for all capabilities.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-tag">GET IN TOUCH</span>
+                    <h2 class="section-title">Contact Us</h2>
+                    <p class="section-subtitle">
+                        Have questions about our programs? Fill out the contact form below, or reach out to us directly through our social lines.
+                    </p>
+                </div>
+
+                <div class="contact-grid scroll-reveal">
+                    <!-- Contact Information Column -->
+                    <div class="contact-info-col">
+                        <h3 class="contact-info-title">Let's Connect</h3>
+                        <p class="contact-info-text">
+                            We are ready to guide you on your journey. If you need assistance with booking, or have specific health questions, drop a line.
+                        </p>
+                        
+                        <ul class="contact-details-list">
+                            <li>
+                                <div class="contact-detail-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                                </div>
+                                <div class="contact-detail-desc">
+                                    <h4>Email Address</h4>
+                                    <p><a href="mailto:info@apexstrength.com">info@apexstrength.com</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact-detail-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                                </div>
+                                <div class="contact-detail-desc">
+                                    <h4>Phone Number</h4>
+                                    <p><a href="tel:+18005550199">+1 (800) 555-0199</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact-detail-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor"><path d="M92.1 254.6c0 24.9 7 49.2 20.2 70.1l3.1 5-13.3 48.6L152 365.2l4.8 2.9c20.2 12 43.4 18.4 67.1 18.4h.1c84.3 0 153.3-69 153.6-153.3.1-40.9-15.8-79.3-44.8-108.3-29-29-67.4-44.9-108.3-44.9-84.4 0-153.3 69-153.6 153.3-.1 16.5 2.5 32.7 7.8 47.9l-11.7 42.1 42.1-11.7zm181.7-83.3c3.7 8.2 1.9 14.9-.7 20.1-2.6 5.2-11.4 13.5-16.1 18.1-4.7 4.7-9.4 6.2-17.6 2.1-8.2-4.1-34.6-12.7-65.9-40.7-24.4-21.7-40.8-48.6-45.6-56.9-4.7-8.2-.5-12.7 3.6-16.8 3.7-3.7 8.2-9.3 12.4-14 4.1-4.7 5.7-7.8 8.2-13 2.6-5.2 1.3-9.8-.7-14s-17.6-42.5-24.1-58c-6.4-15.3-12.8-13.2-17.6-13.5-4.5-.2-9.7-.2-14.8-.2-5.2 0-13.5 1.9-20.7 9.8-7.3 7.8-27.7 27.1-27.7 66.2 0 39.1 28.5 76.9 32.5 82.2 4.1 5.2 56 85.5 135.7 119.9 19 8.2 33.8 13.1 45.4 16.8 19.1 6.1 36.5 5.2 50.2 3.2 15.3-2.3 47-19.2 53.7-37.8 6.7-18.6 6.7-34.6 4.7-37.8-2-3.2-7.3-5.2-15.6-9.3z"/></svg>
+                                </div>
+                                <div class="contact-detail-desc">
+                                    <h4>WhatsApp Line</h4>
+                                    <p><a href="https://wa.me/18005550199" target="_blank" rel="noopener">+1 (800) 555-0199</a></p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="social-channels">
+                            <h4>Follow Our Journey</h4>
+                            <div class="social-icons">
+                                <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram Profile">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                                </a>
+                                <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook Page">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Column -->
+                    <div class="contact-form-col">
+                        <form id="contact-form" class="form-card" novalidate>
+                            <h3 class="form-title">Send a Message</h3>
+                            
+                            <div class="form-group">
+                                <label for="contact-name">Full Name <span class="red-text">*</span></label>
+                                <input type="text" id="contact-name" name="name" class="form-control" placeholder="John Doe" required>
+                                <span class="error-msg" id="error-contact-name"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-email">Email Address <span class="red-text">*</span></label>
+                                <input type="email" id="contact-email" name="email" class="form-control" placeholder="johndoe@example.com" required>
+                                <span class="error-msg" id="error-contact-email"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-phone">Phone Number <span class="red-text">*</span></label>
+                                <input type="tel" id="contact-phone" name="phone" class="form-control" placeholder="+1 (555) 000-0000" required>
+                                <span class="error-msg" id="error-contact-phone"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-subject">Subject <span class="red-text">*</span></label>
+                                <input type="text" id="contact-subject" name="subject" class="form-control" placeholder="Inquiry about 12-Week Transformation" required>
+                                <span class="error-msg" id="error-contact-subject"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-message">Message <span class="red-text">*</span></label>
+                                <textarea id="contact-message" name="message" rows="4" class="form-control" placeholder="Write your question here..." required></textarea>
+                                <span class="error-msg" id="error-contact-message"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-red btn-full">Send Message</button>
+                        </form>
+
+                        <!-- Contact Success Overlay (Hidden) -->
+                        <div class="form-success-card hidden" id="contact-success-state">
+                            <div class="success-icon-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <h3>Message Sent!</h3>
+                            <p>Thank you for reaching out. We have received your inquiry and Coach Alex will get back to you within 24 hours.</p>
+                            <button class="btn btn-red" id="contact-success-reset">Send Another Message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <a href="#home" class="logo">
+                    APEX<span class="red-text">STRENGTH</span>
+                </a>
+                <p class="footer-desc">
+                    Premium personal training and live group coaching designed around your schedule and goals. 
+                    Unlock your true potential today.
+                </p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#why-choose-us">Why Choose Us</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-legal">
+                <p>&copy; 2026 APEX STRENGTH. All rights reserved. Developed with premium vanilla technologies.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL OVERLAYS CONTAINER -->
+    <div class="modal-overlay hidden" id="modal-overlay" role="dialog" aria-modal="true">
+
+        <!-- 1. GROUP TRAINING BOOKING MODAL -->
+        <div class="modal-content-card hidden" id="modal-booking">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-form-wrapper">
+                <h3 class="modal-title">Book Live Session</h3>
+                <p class="modal-subtitle">Reserve your slot for: <strong class="red-text" id="booking-session-name">Monday - Full Body Workout</strong></p>
+                
+                <form id="booking-form" novalidate>
+                    <input type="hidden" id="booking-session-val" name="session_val">
+                    
+                    <div class="form-group">
+                        <label for="booking-name">Full Name <span class="red-text">*</span></label>
+                        <input type="text" id="booking-name" name="name" class="form-control" required>
+                        <span class="error-msg" id="error-booking-name"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="booking-email">Email Address <span class="red-text">*</span></label>
+                        <input type="email" id="booking-email" name="email" class="form-control" required>
+                        <span class="error-msg" id="error-booking-email"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="booking-phone">Phone Number <span class="red-text">*</span></label>
+                        <input type="tel" id="booking-phone" name="phone" class="form-control" required>
+                        <span class="error-msg" id="error-booking-phone"></span>
+                    </div>
+
+                    <div class="modal-actions">
+                        <button type="button" class="btn btn-outline modal-cancel-btn">Cancel</button>
+                        <button type="submit" class="btn btn-red">Confirm Booking</button>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Success state -->
+            <div class="modal-success-wrapper hidden">
+                <div class="success-icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                </div>
+                <h3>Booking Confirmed!</h3>
+                <p>You have successfully reserved a space for <strong class="white-text" id="success-booking-session">Session</strong>.</p>
+                <p class="text-sm">We have sent a classroom link to your email address. Get ready to sweat!</p>
+                <button class="btn btn-red btn-large modal-success-close">Done</button>
+            </div>
+        </div>
+
+        <!-- 2. PERSONAL TRAINING APPLICATION MODAL -->
+        <div class="modal-content-card hidden" id="modal-pt">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-form-wrapper">
+                <h3 class="modal-title">Start Your 12-Week Transformation</h3>
+                <p class="modal-subtitle">Submit your details and Coach Alex will contact you for a fitness goals alignment call.</p>
+                
+                <form id="pt-form" novalidate>
+                    <div class="form-group">
+                        <label for="pt-name">Full Name <span class="red-text">*</span></label>
+                        <input type="text" id="pt-name" name="name" class="form-control" required>
+                        <span class="error-msg" id="error-pt-name"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="pt-email">Email Address <span class="red-text">*</span></label>
+                        <input type="email" id="pt-email" name="email" class="form-control" required>
+                        <span class="error-msg" id="error-pt-email"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pt-phone">Phone Number <span class="red-text">*</span></label>
+                        <input type="tel" id="pt-phone" name="phone" class="form-control" required>
+                        <span class="error-msg" id="error-pt-phone"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pt-goal">Fitness Goal <span class="red-text">*</span></label>
+                        <select id="pt-goal" name="goal" class="form-control" required>
+                            <option value="">-- Select Your Main Target --</option>
+                            <option value="Fat Loss & Tone">Fat Loss & Toning</option>
+                            <option value="Muscle Building">Muscle Building & Hypertrophy</option>
+                            <option value="Strength & Power">Strength & Power Increase</option>
+                            <option value="Cardio & Stamina">Cardio Endurance & Stamina</option>
+                            <option value="Injury Rehab">Injury Rehabilitation & Mobility</option>
+                        </select>
+                        <span class="error-msg" id="error-pt-goal"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pt-level">Current Fitness Level <span class="red-text">*</span></label>
+                        <select id="pt-level" name="level" class="form-control" required>
+                            <option value="">-- Select Level --</option>
+                            <option value="Beginner">Beginner (New to exercise)</option>
+                            <option value="Intermediate">Intermediate (Train occasionally)</option>
+                            <option value="Advanced">Advanced (Train 3+ times a week)</option>
+                        </select>
+                        <span class="error-msg" id="error-pt-level"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pt-time">Preferred Training Time <span class="red-text">*</span></label>
+                        <select id="pt-time" name="time" class="form-control" required>
+                            <option value="">-- Select Preferred Time --</option>
+                            <option value="Morning">Morning (6:00 AM - 12:00 PM)</option>
+                            <option value="Afternoon">Afternoon (12:00 PM - 5:00 PM)</option>
+                            <option value="Evening">Evening (5:00 PM - 9:00 PM)</option>
+                        </select>
+                        <span class="error-msg" id="error-pt-time"></span>
+                    </div>
+
+                    <div class="modal-actions">
+                        <button type="button" class="btn btn-outline modal-cancel-btn">Cancel</button>
+                        <button type="submit" class="btn btn-red">Submit Request</button>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Success state -->
+            <div class="modal-success-wrapper hidden">
+                <div class="success-icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <h3>Request Received!</h3>
+                <p>Thank you! Your personal training request has been received. We will contact you shortly.</p>
+                <button class="btn btn-red btn-large modal-success-close">Done</button>
+            </div>
+        </div>
+
+        <!-- 3. FREE DEMO REGISTRATION MODAL -->
+        <div class="modal-content-card hidden" id="modal-demo">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-form-wrapper">
+                <h3 class="modal-title">Claim Your Free 1-Week Demo</h3>
+                <p class="modal-subtitle">Fill in your information to activate your free 7-day live session access pass.</p>
+                
+                <form id="demo-form" novalidate>
+                    <div class="form-group">
+                        <label for="demo-name">Full Name <span class="red-text">*</span></label>
+                        <input type="text" id="demo-name" name="name" class="form-control" required>
+                        <span class="error-msg" id="error-demo-name"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="demo-email">Email Address <span class="red-text">*</span></label>
+                        <input type="email" id="demo-email" name="email" class="form-control" required>
+                        <span class="error-msg" id="error-demo-email"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="demo-phone">Phone Number <span class="red-text">*</span></label>
+                        <input type="tel" id="demo-phone" name="phone" class="form-control" required>
+                        <span class="error-msg" id="error-demo-phone"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="demo-goal">What is your primary fitness goal? <span class="red-text">*</span></label>
+                        <input type="text" id="demo-goal" name="goal" class="form-control" placeholder="e.g. Lose weight, build strength" required>
+                        <span class="error-msg" id="error-demo-goal"></span>
+                    </div>
+
+                    <div class="modal-actions">
+                        <button type="button" class="btn btn-outline modal-cancel-btn">Cancel</button>
+                        <button type="submit" class="btn btn-red">Activate Free Demo</button>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Success state -->
+            <div class="modal-success-wrapper hidden">
+                <div class="success-icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <h3>Demo Pass Activated!</h3>
+                <p>Congratulations! Your free 7-day demo pass is now active.</p>
+                <p class="text-sm">We have sent the class access codes and instructions directly to your email. See you at our next live class!</p>
+                <button class="btn btn-red btn-large modal-success-close">Done</button>
+            </div>
+        </div>
+
+        <!-- 4. SIGN IN MODAL -->
+        <div class="modal-content-card hidden" id="modal-signin">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-form-wrapper">
+                <h3 class="modal-title">Welcome Back</h3>
+                <p class="modal-subtitle">Sign in to book sessions and track your fitness program.</p>
+                
+                <form id="signin-form" novalidate>
+                    <!-- Global Error Msg -->
+                    <div class="global-error hidden" id="signin-global-error">Invalid email or password.</div>
+
+                    <div class="form-group">
+                        <label for="signin-email">Email Address <span class="red-text">*</span></label>
+                        <input type="email" id="signin-email" name="email" class="form-control" required autocomplete="username">
+                        <span class="error-msg" id="error-signin-email"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="signin-password">Password <span class="red-text">*</span></label>
+                        <input type="password" id="signin-password" name="password" class="form-control" required autocomplete="current-password">
+                        <span class="error-msg" id="error-signin-password"></span>
+                    </div>
+
+                    <div class="form-row-between">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="signin-remember" name="remember">
+                            <span class="checkmark"></span>
+                            Remember Me
+                        </label>
+                        <a href="#" class="forgot-pass-link" id="forgot-pass-btn">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="btn btn-red btn-full">Sign In</button>
+                    
+                    <p class="modal-footer-text">
+                        Don't have an account? <a href="#" id="modal-to-register-btn">Register here</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+
+        <!-- 5. REGISTER MODAL -->
+        <div class="modal-content-card hidden" id="modal-register">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-form-wrapper">
+                <h3 class="modal-title">Create Your Account</h3>
+                <p class="modal-subtitle">Register to lock in booking spots and manage your workout logs.</p>
+                
+                <form id="register-form" novalidate>
+                    <div class="form-group">
+                        <label for="register-name">Full Name <span class="red-text">*</span></label>
+                        <input type="text" id="register-name" name="name" class="form-control" required autocomplete="name">
+                        <span class="error-msg" id="error-register-name"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="register-email">Email Address <span class="red-text">*</span></label>
+                        <input type="email" id="register-email" name="email" class="form-control" required autocomplete="email">
+                        <span class="error-msg" id="error-register-email"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="register-phone">Phone Number <span class="red-text">*</span></label>
+                        <input type="tel" id="register-phone" name="phone" class="form-control" required autocomplete="tel">
+                        <span class="error-msg" id="error-register-phone"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="register-password">Password <span class="red-text">*</span></label>
+                        <input type="password" id="register-password" name="password" class="form-control" placeholder="At least 6 characters" required autocomplete="new-password">
+                        <span class="error-msg" id="error-register-password"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="register-confirm">Confirm Password <span class="red-text">*</span></label>
+                        <input type="password" id="register-confirm" name="confirm" class="form-control" required autocomplete="new-password">
+                        <span class="error-msg" id="error-register-confirm"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-red btn-full">Register Account</button>
+                    
+                    <p class="modal-footer-text">
+                        Already have an account? <a href="#" id="modal-to-signin-btn">Sign In here</a>
+                    </p>
+                </form>
+            </div>
+
+            <!-- Success state -->
+            <div class="modal-success-wrapper hidden">
+                <div class="success-icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <h3>Registration Successful!</h3>
+                <p>Welcome to APEX Strength, <strong class="white-text" id="success-register-name">User</strong>!</p>
+                <p class="text-sm">Your account has been simulated and saved to local memory. You can now sign in immediately.</p>
+                <button class="btn btn-red btn-large" id="register-success-signin">Proceed to Sign In</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Script File -->
+    <script src="js/script.js"></script>
+</body>
+</html>
