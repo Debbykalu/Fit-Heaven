@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Apex Strength & Fitness - Vanilla JavaScript Logic
+   FitHeavens - Vanilla JavaScript Logic
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -202,30 +202,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Read stored user database
     function getStoredUsers() {
-        return JSON.parse(localStorage.getItem('apex_users')) || [];
+        return JSON.parse(localStorage.getItem('fitheavens_users')) || [];
     }
 
     // Save user details
     function storeUser(userObj) {
         const users = getStoredUsers();
         users.push(userObj);
-        localStorage.setItem('apex_users', JSON.stringify(users));
+        localStorage.setItem('fitheavens_users', JSON.stringify(users));
     }
 
     // Set Active Logged In Session
     function setCurrentSession(userObj) {
-        localStorage.setItem('apex_current_user', JSON.stringify(userObj));
+        localStorage.setItem('fitheavens_current_user', JSON.stringify(userObj));
         updateAuthDOM();
     }
 
     // Check Current User session
     function getCurrentSession() {
-        return JSON.parse(localStorage.getItem('apex_current_user'));
+        return JSON.parse(localStorage.getItem('fitheavens_current_user'));
     }
 
     // Clear Active Session
     function logoutSession() {
-        localStorage.removeItem('apex_current_user');
+        localStorage.removeItem('fitheavens_current_user');
         updateAuthDOM();
         closeCurrentModal();
     }
